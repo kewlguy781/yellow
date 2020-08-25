@@ -3,7 +3,7 @@
 
 <h1> Post-Its </h1>
 <% @posts.each do |post| %>
-<table  bgcolor= <%= post.color %> ><tr><td>  
+<table  bgcolor='<%= post.color %>' ><tr><td>  
 <h2><%= post.title %></h2><br>
 <%= post.body %>
 <%= post.color %>

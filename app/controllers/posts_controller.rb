@@ -59,7 +59,7 @@ def set_post
 end
 
 def posts_params
-   params.require(:post).permit(:title, :author, :body)
+   params.require(:post).permit(:title, :color, :body)
  end
 
 
