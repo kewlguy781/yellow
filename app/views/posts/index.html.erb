@@ -1,0 +1,15 @@
+<h1>Your Post-Its</h1>
+<p>Find me in app/views/notes/index.html.erb</p>
+
+<h1> Post-Its </h1>
+<% @posts.each do |post| %>
+<table  bgcolor= <%= post.color %> ><tr><td>  
+<h2><%= post.title %></h2><br>
+<%= post.body %>
+<%= post.color %>
+  
+  <%= link_to 'Show Post-It', post_path(post) %>
+  <%= link_to 'Edit Post-It', edit_post_path(post) %>
+  <%= link_to 'Destroy Post-It', post, method: :delete %>
+</td></tr></table>
+  <% end %>
